@@ -56,14 +56,14 @@ public class ProjectController {
         return new ResponseEntity<String>("Project with ID '" + projectId + "' was deleted successfully.", HttpStatus.OK);
     }
 
-    @PutMapping("/{projectId}")
-    public ResponseEntity<?> updateProject(@PathVariable String projectId){
-
-        Project project = projectService.findProjectByIdentifier(projectId.toUpperCase());
-
-        Project updatedProject = projectService.saveOrUpdateProject(project);
-
-        return new ResponseEntity<Project>(updatedProject, HttpStatus.OK);
-    }
+//    @PutMapping("/{projectId}")
+//    public ResponseEntity<?> updateProject(@PathVariable String projectId){
+//
+//        Project project = projectService.findProjectByIdentifier(projectId.toUpperCase());
+//
+//        Project updatedProject = projectService.saveOrUpdateProject(project);
+//
+//        return new ResponseEntity<Project>(updatedProject, HttpStatus.OK);
+//    }
 
 }
