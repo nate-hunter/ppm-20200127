@@ -17,6 +17,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/project")     // IN FUTURE USE => '/api/v1/project(s)'
+@CrossOrigin
 public class ProjectController {
 
     @Autowired
